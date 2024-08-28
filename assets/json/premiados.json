@@ -1,0 +1,116 @@
+{
+    "premiados": [
+        {
+            "nombre": "Pablo Antonio",
+            "cargo": "Fundador y CEO de Algotive",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/pablo_antonio_castillon_algotive.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/pablo_antonio_castillon_algotive.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/pablo_antonio_castillon_algotive.html",
+            "bloque": "bloque1"
+        },
+        {
+            "nombre": "Jesús David",
+            "cargo": "Chief Transmormation and Information Officer de Hospitales MAC",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/jesus_diaz_garaya_ordobill_cio_hospitales.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/jesus_diaz_garaya_ordobill_cio_hospitales.webp",
+            "pagina": "files/panelistas/jesus_diaz_garaya_ordobill_cio_hospitales.html",
+            "bloque": "bloque2"
+        },
+        {
+            "nombre": "Raúl Medina",
+            "cargo": "Director IT México, Caribe y Centroammérica de Unilever México",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/aldo_raul_medina_celi_unilever.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/aldo_raul_medina_celi_unilever.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/aldo_raul_medina_celi_unilever.html",
+            "bloque": "bloque3"
+        },
+        {
+            "nombre": "Erika Sánchez",
+            "cargo": "CISO y Directora de prevención de Fraudes de Coppel Servicios Financieros",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/erika_mata_sanchez_coppel_1.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/erika_mata_sanchez_coppel_1.webp",
+            "pagina": "files/panelistas/erika_mata_sanchez_coppel_1.html",
+            "bloque": "bloque4"
+        },
+        {
+            "nombre": "Fausto Moreno",
+            "cargo": "Head of Digital Assets Business Unit de Grupo Elektra",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/fausto_moreno.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/fausto_moreno.webp",
+            "pagina": "files/panelistas/fausto_moreno.html",
+            "bloque": "bloque5"
+        },
+        {
+            "nombre": "Carlos Nuñez",
+            "cargo": "Director de TI para México y Centroamérica de Ferrero de México",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/carlos_alberto_nunez_quirarte_ferrero_.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/carlos_alberto_nunez_quirarte_ferrero_.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/carlos_alberto_nunez_quirarte_ferrero_.html",
+            "bloque": "bloque6"
+        },
+        {
+            "nombre": "Carlo González",
+            "cargo": "CIO de Grupo Interesse",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/carlo_puerto_grupo_interesse.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/carlo_puerto_grupo_interesse.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/carlo_puerto_grupo_interesse.html",
+            "bloque": "bloque7"
+        },
+        {
+            "nombre": "Pablo Ramírez",
+            "cargo": "Chief Technology Officer de A127",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/pablo_ramirez.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/pablo_ramirez.webp",
+            "pagina": "files/panelistas/pablo_ramirez.html",
+            "bloque": "bloque8"
+        },
+        {
+            "nombre": "Juan Rosales",
+            "cargo": "Head of Engineering México de BBVA México",
+            "imagen": "https://assets/images/rafael_juan_rosales_flores_BBVA.webp",
+            "imagen_2": "https://assets/images/rafael_juan_rosales_flores_BBVA.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/rafael_juan_rosales_gomez_BBVA.html",
+            "bloque": "bloque9"
+        },
+        {
+            "nombre": "Fernando Treviño",
+            "cargo": "Director General Adjunto de Tecnología de Banorte",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/fernando_trevino_elizondo_banorte.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/fernando_trevino_elizondo_banorte.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/fernando_trevino_elizondo_banorte.html",
+            "bloque": "bloque10"
+        },
+        {
+            "nombre": "Rosario Valdivia",
+            "cargo": "CIO para Banca de Consumo de Citibanamex",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/rosario_valdivia_citibanamex.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/rosario_valdivia_citibanamex.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/rosario_valdivia_citibanamex.html",
+            "bloque": "bloque11"
+        },
+        {
+            "nombre": "José Velasco",
+            "cargo": "Chief Technology and Information Officer de equality company",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/jose_rodolfo_velasco_cota_equality_company.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/jose_rodolfo_velasco_cota_equality_company.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/jose_rodolfo_velasco_cota_equality_company.html",
+            "bloque": "bloque12"
+        },
+        {
+            "nombre": "Fernando Velázquez",
+            "cargo": "Sr. Director Technology Transformation & Innovation, México y Centroamérica de W.M.C.",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/fernando_velazquez_walmart.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/fernando_velazquez_walmart.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/fernando_velazquez_walmart.html",
+            "bloque": "bloque13"
+        },
+        {
+            "nombre": "Enaela García",
+            "cargo": "CEO de CYCSAS",
+            "imagen": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/enaelagarcia.webp",
+            "imagen_2": "https://mundoejecutivo.com.mx/eventoTI-2024/assets/images/enaelagarcia.webp",
+            "pagina": "https://mundoejecutivo.com.mx/eventoTI-2024/files/panelistas/enaelagarcia.html",
+            "bloque": "bloque13"
+        }
+    ]
+}
