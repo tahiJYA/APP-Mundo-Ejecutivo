@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualitas | Nosotros</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/navegation.css">
+    <link rel="stylesheet" href="../assets/sistemas/demo/demo.css">
+    <link rel="stylesheet" href="../assets/sistemas/dist/jquery.flipster.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        /* Estilos del interruptor */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-bottom: 20px;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        /* Estilos para la notificación emergente */
+        .notification {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            font-size: 17px;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        .notification.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <main class="contenedor_main">
+        <header class="contenedor_header_2">
+            <section class="contenedor_header_seccion_4">
+                <div class="seccion_4_flecha">
+                    <div class="contenedor_flecha" onclick="goBack()">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="seccion_4_titulo">
+                    <h2 class="texto_1" style="font-size: 25px;">QUALITAS</h2>
+                </div>
+                <div class="seccion_4_flecha"></div>
+            </section>
+
+            <section class="contenedor_header_seccion_5">
+                <div class="contenedor_universal fondo_qualitas">
+                    <h2 class="texto_4" style="text-shadow: 0px 0px 10px #000000;">Mundo Qualitas</h2>
+                    <p class="texto_5" style="text-shadow: 0px 0px 6px #000000;">Qualitas: Protección y confianza en cada kilómetro.</p>
+                </div>
+                <div class="contenido_app">
+                    <div class="contenedor_universal" style="border-top-right-radius: 30px; border-top-left-radius: 30px;">
+                        <p class="texto_3" style="margin-top: 20px;">Qualitas | Nosotros</p>
+                    </div>
+
+                    <div class="contenedor_universal_eventos">
+                        <div style="display: flex; flex-wrap: nowrap; grid-gap: 15px 15px;">
+                            <div class="tarjeta_universal_eventos_2">
+                                <a href="qualitas.html" class="enlace_1" style="align-content: space-between;">
+                                    <img src="../assets/images/tocar.png" alt="" class="imagen_qualitas_carrusel">
+                                    <p class="texto_5 ajuste_texto_settings_1 color_blanco" style="width: 100%; text-align: center;">Videos</p>
+                                </a>
+                            </div>
+                            <div class="tarjeta_universal_eventos_2">
+                                <a href="qualita_articulos.html" class="enlace_1" style="align-content: space-between;">
+                                    <img src="../assets/images/articulo.png" alt="" class="imagen_qualitas_carrusel">
+                                    <p class="texto_5 ajuste_texto_settings_1 color_blanco" style="width: 100%; text-align: center;">Artículos</p>
+                                </a>
+                            </div>
+                            <div class="tarjeta_universal_eventos_2">
+                                <a href="qualita_consejos.html" class="enlace_1" style="align-content: space-between;">
+                                    <img src="../assets/images/lampara.png" alt="" class="imagen_qualitas_carrusel">
+                                    <p class="texto_5 ajuste_texto_settings_1 color_blanco" style="width: 100%; text-align: center;">Consejos</p>
+                                </a>
+                            </div>
+                            <div class="tarjeta_universal_eventos_2">
+                                <a href="qualita_nosotros.html" class="enlace_1" style="align-content: space-between;">
+                                    <img src="../assets/images/carro_activo.png" alt="" class="imagen_qualitas_carrusel">
+                                    <p class="texto_5 ajuste_texto_settings_1 color_blanco color_activo" style="width: 100%; text-align: center;">Nosotros</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor_linea_dorada">
+                        <div class="linea_dorada"></div>
+                    </div>
+
+                    <div class="contenedor_universal_eventos" style="padding: 0% 0%;">
+                        <div style="display: flex; flex-wrap: wrap; grid-gap: 25px 0px; width: 100%; height: auto;">
+                            <div class="tarjeta_video_qualitas_2">
+                                <a href="https://www.qualitas.com.mx/web/qmx/-que-hacer-en-caso-de-accidente-" style="position: relative; width: 100%; height: 200px;">
+                                    <img src="https://www.qualitas.com.mx/documents/19189400/19781973/Cotiza-tu-Seguro-300.jpg/10b08261-6b78-90a1-cd85-018042f1313d?t=1646183614296" title="Tour Descubre tu Potencial 2024 | Sergio Liceaga" class="imagen_qualitas_articulo" style="filter: brightness(0.5);">
+                                    <p style="position: absolute; color: #ffffff; bottom: 10px; left: 10px;">COTIZA TU SEGURO</p>
+                                </a>
+                            </div>
+                            <div class="tarjeta_video_qualitas_2">
+                                <a href="https://www.qualitas.com.mx/web/qmx/-que-hacer-en-caso-de-accidente-" style="position: relative; width: 100%; height: 200px;">
+                                    <img src="https://www.qualitas.com.mx/documents/19189400/19781973/001_Box_Home.jpg/377749ba-2532-3e75-a163-0a362f61f90b?t=1646183612731" title="Tour Descubre tu Potencial 2024 | Sergio Liceaga" class="imagen_qualitas_articulo" style="filter: brightness(0.5);">
+                                    <p style="position: absolute; color: #ffffff; bottom: 10px; left: 10px;">TALENTO QUALITAS</p>
+                                </a>
+                            </div>
+                            <div class="tarjeta_video_qualitas_2" style="margin-bottom: 50px;">
+                                <a href="https://www.qualitas.com.mx/web/qmx/-que-hacer-en-caso-de-accidente-" style="position: relative; width: 100%; height: 200px;">
+                                    <img src="https://www.qualitas.com.mx/documents/19189400/19781973/Condiciones-300.jpg/5e6edbc0-7179-a34d-1d26-c79c30cb1910?t=1646183613244" title="Tour Descubre tu Potencial 2024 | Sergio Liceaga" class="imagen_qualitas_articulo" style="filter: brightness(0.5);">
+                                    <p style="position: absolute; color: #ffffff; bottom: 10px; left: 10px;">CONOCE TUS CONDICIONES GENERALES</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="navigation" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                <ul style="justify-content: space-between;">
+                    <li class="list">
+                        <a href="https://cumbre1000.com/member-login/">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span class="text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="list active">
+                        <a href="setting.html">
+                            <span class="icon">
+                                <img src="../assets/images/qualitasapp.png" alt="s" class="imagen_menu_navegacion">
+                            </span>
+                            <span class="text">Qualitas</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="home.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="blog.html">
+                            <span class="icon">
+                                <ion-icon name="document-outline"></ion-icon>
+                            </span>
+                            <span class="text">Blog</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="contact.html">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            <span class="text">Contact</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </section>
+
+            <script>
+                const list = document.querySelectorAll('.list');
+                function activeLink() {
+                    list.forEach(item => item.classList.remove('active'));
+                    this.classList.add('active');
+                }
+                list.forEach(item => item.addEventListener('click', activeLink));
+            </script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </header>
+    </main>
+
+    <!-- Script Notificaciones y Sonido -->
+    <script>
+        const notificationToggle = document.getElementById('notificationToggle');
+        const soundToggle = document.getElementById('soundToggle');
+        const notificationPopup = document.getElementById('notificationPopup');
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        let isMuted = false;
+
+        // Control del interruptor de notificaciones
+        notificationToggle.addEventListener('change', function() {
+            if (notificationToggle.checked) {
+                enableNotifications();
+            } else {
+                disableNotifications();
+            }
+        });
+
+        function enableNotifications() {
+            if (Notification.permission === "granted") {
+                showNotification('Notificaciones encendidas');
+                // Aquí va la lógica para habilitar notificaciones push, si es necesario
+            } else if (Notification.permission !== "denied") {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        showNotification('Notificaciones encendidas');
+                        // Aquí va la lógica para habilitar notificaciones push, si es necesario
+                    } else {
+                        showNotification('Permiso de notificaciones denegado');
+                    }
+                });
+            } else {
+                showNotification('Permiso de notificaciones denegado');
+            }
+        }
+
+        function disableNotifications() {
+            showNotification('Notificaciones apagadas');
+            // Aquí va la lógica para deshabilitar notificaciones push, si es necesario
+        }
+
+        // Control del interruptor de sonido
+        soundToggle.addEventListener('change', function() {
+            isMuted = !isMuted;
+            if (isMuted) {
+                muteSounds();
+            } else {
+                unmuteSounds();
+            }
+        });
+
+        function muteSounds() {
+            showNotification('Sonido desactivado');
+            backgroundMusic.muted = true;
+            document.querySelectorAll('audio, video').forEach(el => el.muted = true);
+        }
+
+        function unmuteSounds() {
+            showNotification('Sonido activado');
+            backgroundMusic.muted = false;
+            document.querySelectorAll('audio, video').forEach(el => el.muted = false);
+        }
+
+        // Función para mostrar la notificación emergente
+        function showNotification(message) {
+            notificationPopup.textContent = message;
+            notificationPopup.className = "notification show";
+            setTimeout(function() {
+                notificationPopup.className = "notification";
+            }, 3000); // Desaparece después de 3 segundos
+        }
+    </script>
+
+    <script src="../assets/sistemas/demo/jquery.min.js"></script>
+    <script src="../assets/sistemas/dist/jquery.flipster.min.js"></script>
+    <script src="../assets/scripts/modo.js"></script>
+    <script>
+        var myFlipster = $('.my-flipster').flipster(); 
+        myFlipster.flipster('next');
+        myFlipster.flipster('prev');
+        myFlipster.flipster('jump', 0);
+        myFlipster.flipster('jump', $('.my-item'));
+        myFlipster.flipster('play');
+        myFlipster.flipster('play', 5000);
+        myFlipster.flipster('pause'); 
+        myFlipster.flipster('stop');
+        myFlipster.flipster('index');
+
+        var coverflow = $("#flat").flipster({
+            itemContainer: 'ul',
+            itemSelector: 'li',
+            start: 'center',
+            fadeIn: 400,
+            loop: true,
+            autoplay: 5000,
+            pauseOnHover: true,
+            style: 'flat',
+            spacing: -0.25,
+            click: true,
+            keyboard: true,
+            scrollwheel: true,
+            touch: true,
+            nav: false,
+            buttons: false,
+            buttonPrev: 'Previous',
+            buttonNext: 'Next',
+            onItemSwitch: false
+        });
+    </script>
+
+
+<div class="pantalla_defecto">
+    <p class="texto_3 size-font-ajuste" style="width: 90%; text-align: center;">Dispositivo no compatible</p>
+    <div class="contenedor_botones_apps">
+        <img src="../assets/images/logo1000.png" alt="CUMBRE 1000" title="CUMBRE 1000" class="imagen_pantalla_defecto">
+    </div>
+    <p class="texto_5" style="width: 90%; text-align: center;">Lo sentimos, pero esta aplicación no es compatible con tu dispositivo. <br> <br> Descárgala a través de nuestras plataformas oficiales o visita el <a class="texto_5_enlace" href="https://cumbre1000.com/">sitio web página oficial</a></p>
+    <div class="contenedor_botones_apps">
+        <a href="https://play.google.com/store/apps/details?id=com.cumbre1000" target="_blank" class="boton_app">
+            <img src="../assets/images/playstore.png" alt="Descargar CUMBRE 1000 desde Google Play" title="Descargar CUMBRE 1000 desde Google Play" class="imagen_boton_app">
+        </a>
+        <a href="https://apps.apple.com/us/app/cumbre-1000/id1583669538" target="_blank" class="boton_app">
+            <img src="../assets/images/appstore.png" alt="Descargar CUMBRE 1000 desde App Store" title="Descargar CUMBRE 1000 desde App Store" class="imagen_boton_app">
+        </a>
+    </div>
+</div>
+</body>
+</html>

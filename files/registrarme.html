@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panelistas</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/navegation.css">
+
+
+
+
+    <link rel="stylesheet" href="../assets/sistemas/demo/demo.css">
+    <link rel="stylesheet" href="../assets/sistemas/dist/jquery.flipster.min.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+    <h1>Lista de Panelistas</h1>
+    <div id="panelistas-container"></div>
+
+    <script>
+        const jsonURL = 'https://cumbre1000.com/wp-json/wp/v2/panelista';
+
+        function fetchMediaUrl(mediaId) {
+            return fetch(`https://cumbre1000.com/wp-json/wp/v2/media/${mediaId}`)
+                .then(response => response.json())
+                .then(media => media.source_url)
+                .catch(error => {
+                    console.error('Error al cargar el medio:', error);
+                    return ''; // Devuelve una cadena vacía si hay un error
+                });
+        }
+
+        fetch(jsonURL)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al cargar el JSON');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data); // Verificar el contenido de data
+                const container = document.getElementById('panelistas-container');
+                
+                if (Array.isArray(data)) {
+                    data.forEach(panelista => {
+                        // Cargar la URL de la imagen destacada si existe
+                        fetchMediaUrl(panelista.featured_media)
+                            .then(mediaUrl => {
+                                const panelistaDiv = document.createElement('div');
+                                panelistaDiv.classList.add('panelista');
+                                panelistaDiv.innerHTML = `
+                                    <!--<h2>${panelista.title.rendered}</h2>-->
+                                    <div class="tarjeta_universal">
+                                        <a href="${panelista.link}">
+                                            <img src="${mediaUrl}" alt="Foto de ${panelista.title.rendered}" class="imagen_2">
+                                        </a>    
+                                    </div>
+                                `;
+                                container.appendChild(panelistaDiv);
+                            });
+                    });
+                } else {
+                    console.error('La estructura del JSON no es la esperada.');
+                }
+            })
+            .catch(error => console.error('Error cargando el JSON:', error));
+    </script>
+
+<div class="pantalla_defecto">
+    <p class="texto_3 size-font-ajuste" style="width: 90%; text-align: center;">Dispositivo no compatible</p>
+    <div class="contenedor_botones_apps">
+        <img src="../assets/images/logo1000.png" alt="CUMBRE 1000" title="CUMBRE 1000" class="imagen_pantalla_defecto">
+    </div>
+    <p class="texto_5" style="width: 90%; text-align: center;">Lo sentimos, pero esta aplicación no es compatible con tu dispositivo. <br> <br> Descárgala a través de nuestras plataformas oficiales o visita el <a class="texto_5_enlace" href="https://cumbre1000.com/">sitio web página oficial</a></p>
+    <div class="contenedor_botones_apps">
+        <a href="https://play.google.com/store/apps/details?id=com.cumbre1000" target="_blank" class="boton_app">
+            <img src="../assets/images/playstore.png" alt="Descargar CUMBRE 1000 desde Google Play" title="Descargar CUMBRE 1000 desde Google Play" class="imagen_boton_app">
+        </a>
+        <a href="https://apps.apple.com/us/app/cumbre-1000/id1583669538" target="_blank" class="boton_app">
+            <img src="../assets/images/appstore.png" alt="Descargar CUMBRE 1000 desde App Store" title="Descargar CUMBRE 1000 desde App Store" class="imagen_boton_app">
+        </a>
+    </div>
+</div>
+</body>
+</html>
